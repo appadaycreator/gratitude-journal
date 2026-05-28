@@ -3,7 +3,7 @@
   "short_name": "gratitude-jo",
   "start_url": "/gratitude-journal/",
   "display": "standalone",
-  "background_color": "#6366f1",
+  "background_color": "#ffffff",
   "theme_color": "#7c3aed",
   "scope": "/gratitude-journal/"
 }
