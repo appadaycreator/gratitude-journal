@@ -1,8 +1,9 @@
 {
   "name": "Gratitude Journal",
   "short_name": "gratitude-jo",
-  "start_url": "/",
+  "start_url": "/gratitude-journal/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#6366f1"
+  "theme_color": "#6366f1",
+  "scope": "/gratitude-journal/"
 }
