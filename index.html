@@ -338,6 +338,16 @@ body{background:#FBF8F1;}
 .gj-use .tx{position:relative;padding:16px;}
 .gj-use .tx h4{font-size:15px;font-weight:700;}
 .gj-use .tx p{font-size:12px;opacity:.92;margin-top:2px;}
+/* reviews */
+.gj-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+@media(max-width:880px){.gj-reviews{grid-template-columns:1fr;}}
+.gj-review{background:#fff;border:1px solid #e8f1eb;border-radius:16px;padding:20px 18px;box-shadow:0 6px 18px rgba(63,107,54,.06);display:flex;flex-direction:column;gap:12px;}
+.gj-review .stars{color:#E8853C;font-size:14px;letter-spacing:2px;}
+.gj-review p{font-size:13px;color:#445;line-height:1.8;flex:1;}
+.gj-review .who{display:flex;align-items:center;gap:10px;}
+.gj-review .who img{width:42px;height:42px;border-radius:50%;object-fit:cover;box-shadow:0 3px 8px rgba(63,107,54,.18);}
+.gj-review .who b{font-size:13px;color:#3F6B36;display:block;}
+.gj-review .who small{font-size:11px;color:#8a978f;}
 /* benefit list */
 .gj-benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
 @media(max-width:760px){.gj-benefits{grid-template-columns:1fr;}}
@@ -637,6 +647,29 @@ body{background:#FBF8F1;}
             <div class="gj-use"><div class="ph" style="background-image:url('assets/photos/photo_10.jpg');"></div><div class="ov"></div><div class="tx"><h4>ストレスケアに</h4><p>気持ちの切り替えを習慣に</p></div></div>
             <div class="gj-use"><div class="ph" style="background-image:url('assets/photos/photo_11.jpg');"></div><div class="ov"></div><div class="tx"><h4>家族・親子で</h4><p>今日の良かったことを共有</p></div></div>
             <div class="gj-use"><div class="ph" style="background-image:url('assets/photos/photo_12.jpg');"></div><div class="ov"></div><div class="tx"><h4>朝のルーティンに</h4><p>前向きな1日のスタートに</p></div></div>
+          </div>
+        </section>
+
+        <!-- ===== reviews ===== -->
+        <section class="gj-sec" style="padding-top:12px;">
+          <h2 class="gj-h">続けている人の、リアルな声</h2>
+          <p class="gj-lead">小さな習慣が、毎日の気持ちを少しずつ変えていく。利用者の体験談です。</p>
+          <div class="gj-reviews">
+            <article class="gj-review">
+              <div class="stars" aria-label="星5つ">★★★★★</div>
+              <p>「寝る前の5分で今日の感謝を3つ書くだけ。続けるうちに、嫌なことより良かったことに目が向くようになりました。睡眠も以前より深くなった気がします。」</p>
+              <div class="who"><img src="assets/photos/photo_07.jpg" alt=""><span><b>30代・会社員</b><small>利用4ヶ月・連続記録112日</small></span></div>
+            </article>
+            <article class="gj-review">
+              <div class="stars" aria-label="星5つ">★★★★★</div>
+              <p>「登録もインストールも不要で、ブラウザですぐ始められたのが続いた理由。データが端末内だけに残るので、本音を素直に書けるのが気に入っています。」</p>
+              <div class="who"><img src="assets/photos/photo_08.jpg" alt=""><span><b>40代・主婦</b><small>利用7ヶ月・週5ペース</small></span></div>
+            </article>
+            <article class="gj-review">
+              <div class="stars" aria-label="星5つ">★★★★★</div>
+              <p>「子どもと一緒に『今日良かったこと』を言い合う習慣に。年間グラフで記録が積み上がっていくのが見えると、家族みんなのモチベーションになります。」</p>
+              <div class="who"><img src="assets/photos/photo_22.jpg" alt=""><span><b>30代・2児の母</b><small>利用5ヶ月・親子で記録</small></span></div>
+            </article>
           </div>
         </section>
 

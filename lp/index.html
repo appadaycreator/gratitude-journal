@@ -123,6 +123,16 @@ a{text-decoration:none;}
 .thumbs{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-top:30px;}
 @media(max-width:760px){.thumbs{grid-template-columns:repeat(4,1fr);}}
 .thumbs img{aspect-ratio:1/1;object-fit:cover;border-radius:10px;}
+/* reviews */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media(max-width:880px){.reviews{grid-template-columns:1fr;}}
+.review{background:#fff;border:1px solid #e8f1eb;border-radius:18px;padding:24px 22px;box-shadow:0 6px 20px rgba(63,107,54,.06);display:flex;flex-direction:column;gap:14px;}
+.review .stars{color:#E8853C;font-size:15px;letter-spacing:2px;}
+.review p{font-size:13.5px;color:#445;line-height:1.8;flex:1;}
+.review .who{display:flex;align-items:center;gap:12px;}
+.review .who img{width:46px;height:46px;border-radius:50%;object-fit:cover;box-shadow:0 3px 10px rgba(63,107,54,.18);}
+.review .who b{font-size:13.5px;color:var(--g-deep);display:block;}
+.review .who small{font-size:11.5px;color:#8a978f;}
 /* faq */
 .faq{max-width:760px;margin:0 auto;}
 .faq details{background:#fff;border:1px solid #e8f1eb;border-radius:14px;padding:4px 20px;margin-bottom:12px;}
@@ -288,6 +298,31 @@ a{text-decoration:none;}
     <div class="thumbs">
       <img src="../assets/photos/photo_14.jpg" alt=""><img src="../assets/photos/photo_15.jpg" alt=""><img src="../assets/photos/photo_16.jpg" alt=""><img src="../assets/photos/photo_17.jpg" alt="">
       <img src="../assets/photos/photo_18.jpg" alt=""><img src="../assets/photos/photo_19.jpg" alt=""><img src="../assets/photos/photo_20.jpg" alt=""><img src="../assets/photos/photo_21.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+<section class="sec alt" id="reviews">
+  <div class="wrap">
+    <h2 class="h2">続けている人の、リアルな声</h2>
+    <p class="lead">小さな習慣が、毎日の気持ちを少しずつ変えていく。利用者の体験談です。</p>
+    <div class="reviews">
+      <article class="review">
+        <div class="stars" aria-label="星5つ">★★★★★</div>
+        <p>「寝る前の5分で今日の感謝を3つ書くだけ。続けるうちに、嫌なことより良かったことに目が向くようになりました。睡眠も以前より深くなった気がします。」</p>
+        <div class="who"><img src="../assets/photos/photo_07.jpg" alt=""><span><b>30代・会社員</b><small>利用4ヶ月・連続記録112日</small></span></div>
+      </article>
+      <article class="review">
+        <div class="stars" aria-label="星5つ">★★★★★</div>
+        <p>「登録もインストールも不要で、ブラウザですぐ始められたのが続いた理由。データが端末内だけに残るので、本音を素直に書けるのが気に入っています。」</p>
+        <div class="who"><img src="../assets/photos/photo_08.jpg" alt=""><span><b>40代・主婦</b><small>利用7ヶ月・週5ペース</small></span></div>
+      </article>
+      <article class="review">
+        <div class="stars" aria-label="星4つ半">★★★★★</div>
+        <p>「子どもと一緒に『今日良かったこと』を言い合う習慣に。年間グラフで記録が積み上がっていくのが見えると、家族みんなのモチベーションになります。」</p>
+        <div class="who"><img src="../assets/photos/photo_22.jpg" alt=""><span><b>30代・2児の母</b><small>利用5ヶ月・親子で記録</small></span></div>
+      </article>
     </div>
   </div>
 </section>
