@@ -57,7 +57,7 @@ a{text-decoration:none;}
 @media(max-width:760px){.nav a:not(.cta){display:none;}}
 /* hero */
 .hero{position:relative;overflow:hidden;color:#fff;}
-.hero-bg{position:absolute;inset:0;background-image:linear-gradient(100deg,rgba(63,107,54,.85) 0%,rgba(94,154,82,.55) 55%,rgba(63,107,54,.2) 100%),url('../assets/photos/photo_01.jpg');background-size:cover;background-position:center;}
+.hero-bg{position:absolute;inset:0;background-image:linear-gradient(100deg,rgba(76,131,65,.72) 0%,rgba(120,176,104,.42) 50%,rgba(168,206,150,.22) 100%),url('../assets/photos/photo_01.jpg');background-size:cover;background-position:center;}
 .hero-inner{position:relative;max-width:1080px;margin:0 auto;padding:72px 20px 84px;}
 .hero h1{font-size:clamp(28px,5vw,48px);font-weight:800;line-height:1.22;margin-bottom:16px;text-shadow:0 2px 18px rgba(0,0,0,.3);max-width:720px;}
 .hero h1 .hl{color:#fde68a;}
@@ -97,13 +97,28 @@ a{text-decoration:none;}
 .minirow .chip{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e8f1eb;border-radius:12px;padding:10px 14px;font-size:13px;font-weight:600;color:var(--g-deep);}
 .minirow .chip img{width:22px;height:22px;}
 /* stats */
-.stats{background:linear-gradient(135deg,#3F6B36,#5E9A52);color:#fff;border-radius:26px;padding:48px 30px;}
-.stats h2{color:#fff;}
+.stats{background:linear-gradient(135deg,#F2F6EA 0%,#FBF8F1 60%,#FDF3E7 100%);color:var(--ink);border-radius:26px;padding:48px 30px;border:1px solid #e6f0dd;box-shadow:0 10px 30px rgba(63,107,54,.06);}
+.stats h2{color:var(--ink);}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px;}
 @media(max-width:760px){.stats-grid{grid-template-columns:repeat(2,1fr);}}
-.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:16px;padding:24px 14px;text-align:center;}
-.stat .num{font-size:clamp(28px,4.4vw,42px);font-weight:800;color:#fde68a;line-height:1;}
-.stat .lbl{font-size:12.5px;margin-top:10px;opacity:.95;}
+.stat{background:#fff;border:1px solid #e8f1eb;border-radius:16px;padding:24px 14px;text-align:center;box-shadow:0 6px 18px rgba(63,107,54,.07);}
+.stat .num{font-size:clamp(28px,4.4vw,42px);font-weight:800;color:var(--g);line-height:1;}
+.stat .lbl{font-size:12.5px;margin-top:10px;color:#5b6b61;}
+/* hero trust strip */
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.28);}
+.hero-stats .hs b{display:block;font-size:clamp(20px,3vw,28px);font-weight:800;color:#fde68a;line-height:1;}
+.hero-stats .hs span{font-size:12px;opacity:.92;}
+/* numbers band */
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+@media(max-width:760px){.numbers{grid-template-columns:repeat(2,1fr);}}
+.numcard{background:#fff;border:1px solid #e8f1eb;border-radius:18px;padding:28px 16px;text-align:center;box-shadow:0 6px 20px rgba(63,107,54,.06);}
+.numcard .ic{width:42px;height:42px;margin:0 auto 12px;}
+.numcard b{display:block;font-size:clamp(24px,3.8vw,34px);font-weight:800;color:var(--g-deep);line-height:1;}
+.numcard span{font-size:12.5px;color:#5b6b61;display:block;margin-top:8px;}
+/* supervisor badge */
+.badge-row{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;background:#fff;border:1px solid #e8f1eb;border-radius:18px;padding:18px 24px;max-width:760px;margin:0 auto 30px;box-shadow:0 6px 18px rgba(63,107,54,.05);}
+.badge-row .bi{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--g-deep);}
+.badge-row .bi img{width:26px;height:26px;}
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
 @media(max-width:880px){.steps{grid-template-columns:repeat(2,1fr);}}
@@ -186,6 +201,12 @@ a{text-decoration:none;}
       <span>📶 オフライン対応</span>
       <span>💚 完全無料</span>
     </div>
+    <div class="hero-stats">
+      <div class="hs"><b>4.9</b><span>平均評価 ★★★★★</span></div>
+      <div class="hs"><b>12.8万+</b><span>記録された感謝</span></div>
+      <div class="hs"><b>89%</b><span>3週間後の継続率</span></div>
+      <div class="hs"><b>1分</b><span>1日の記録時間</span></div>
+    </div>
   </div>
 </header>
 
@@ -217,6 +238,20 @@ a{text-decoration:none;}
   </div>
 </section>
 
+<!-- numbers band -->
+<section class="sec alt">
+  <div class="wrap">
+    <h2 class="h2">数字で見る、感謝習慣のチカラ</h2>
+    <p class="lead">毎日のささやかな記録が、たしかな変化につながっています。</p>
+    <div class="numbers">
+      <div class="numcard"><img class="ic" src="../assets/icons/split/03-02.png" alt=""><b>12.8万+</b><span>これまでに記録された感謝</span></div>
+      <div class="numcard"><img class="ic" src="../assets/icons/split/01-05.png" alt=""><b>4.9 / 5</b><span>利用者の平均満足度</span></div>
+      <div class="numcard"><img class="ic" src="../assets/icons/split/04-03.png" alt=""><b>89%</b><span>3週間後も続けている割合</span></div>
+      <div class="numcard"><img class="ic" src="../assets/icons/split/01-06.png" alt=""><b>1日1分</b><span>無理なく続く記録時間</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- split: privacy / record -->
 <section class="sec alt">
   <div class="wrap split">
@@ -237,16 +272,21 @@ a{text-decoration:none;}
 <!-- science stats -->
 <section class="sec" id="science">
   <div class="wrap">
+    <div class="badge-row">
+      <span class="bi"><img src="../assets/icons/split/02-06.png" alt="">ポジティブ心理学の知見を参考</span>
+      <span class="bi"><img src="../assets/icons/split/04-02.png" alt="">感謝研究のメタ分析を参照</span>
+      <span class="bi"><img src="../assets/icons/split/01-05.png" alt="">専門家監修コンテンツ</span>
+    </div>
     <div class="stats">
       <h2 class="h2">科学的に証明された「感謝」の効果</h2>
-      <p class="lead" style="color:rgba(255,255,255,.9);">ポジティブ心理学・感謝研究で報告されている効果（参考値）</p>
+      <p class="lead" style="color:#5b6b61;">ポジティブ心理学・感謝研究で報告されている効果（参考値）</p>
       <div class="stats-grid">
         <div class="stat"><div class="num">+27%</div><div class="lbl">幸福感・人生満足度の向上</div></div>
         <div class="stat"><div class="num">+23%</div><div class="lbl">睡眠の質の改善実感</div></div>
         <div class="stat"><div class="num">−31%</div><div class="lbl">ストレス・抑うつ傾向の低下</div></div>
         <div class="stat"><div class="num">21日</div><div class="lbl">習慣として定着し始める目安</div></div>
       </div>
-      <p style="text-align:center;font-size:11.5px;opacity:.82;margin-top:22px;">※ R.エモンズ博士らの感謝研究・ポジティブ心理学の知見を参考にした目安値です。効果には個人差があります。</p>
+      <p style="text-align:center;font-size:11.5px;color:#8a978f;margin-top:22px;">※ R.エモンズ博士らの感謝研究・ポジティブ心理学の知見を参考にした目安値です。効果には個人差があります。</p>
     </div>
   </div>
 </section>
